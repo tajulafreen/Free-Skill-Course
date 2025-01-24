@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Skill Course Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Course Overview Section -->
+    <header class="course-overview">
+        <h1 id="course-title">Learn Frontend Development</h1>
+        <p id="course-details">
+            Level: <span id="course-level">Beginner</span> | 
+            Duration: <span id="course-duration">10 hours</span> | 
+            Videos: <span id="course-videos">20</span> | 
+            Rating: <span id="course-rating">4.5/5</span>
+        </p>
+        <button id="enroll-button">Enroll Now</button>
+    </header>
+
+    <!-- Video Section (Player and Course Videos) -->
+    <div class="course-content">
+        <div class="video-section">
+            <!-- Video Player Section -->
+            <section class="video-player">
+              
+                <div class="player-wrapper">
+                    <iframe 
+                        id="youtube-player" 
+                        width="800" 
+                        height="500" 
+                        src="https://www.youtube.com/embed?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <p id="video-summary">AI-Generated Summary: This is a sample video summary.</p>
+                </div>
+            </section>
+
+            <!-- Video List Section -->
+            <section class="video-list">
+                <h2>Course Videos</h2>
+                <ul id="video-container">
+                    <!-- Videos will be dynamically added here -->
+                </ul>
+            </section>
+        </div>
+
+        <!-- Notes and Tools Section -->
+        <section class="notes-tools">
+            <div class="tab-container">
+                <div class="tab active" data-target="notes">Notes</div>
+                <div class="tab" data-target="tools">Tools</div>
+            </div>
+            <div id="notes" class="tab-content active">
+                <h2>Notes</h2>
+                <textarea id="custom-notes" placeholder="Write your notes here..."></textarea>
+            </div>
+            <div id="tools" class="tab-content">
+                <h2>Tools</h2>
+                <p>Here you can find various tools to enhance your learning experience.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Progress Tracker and Extras -->
+    <footer class="extras">
+        <div id="progress-tracker">
+            <label>Course Progress: </label>
+            <progress id="progress-bar" value="0" max="100"></progress>
+            <span id="progress-percent">0%</span>
+        </div>
+        <div id="job-tips">
+            <h3>Job-Seeker Tips</h3>
+            <p>Enhance your resume by including this course and showcasing your projects.</p>
+        </div>
+        <button id="rate-course">Rate This Course</button>
+    </footer>
+</body>
+</html>
